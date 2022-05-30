@@ -31,17 +31,17 @@
             return string.Format($"Velkommen til {_biblioteksNavn} - datoen i dag er: {DateTime.Now.ToShortDateString()}");
         }
 
-        public LaanerClass OpretLaaner(int laanerNummer, string navn)
+        public LaanerClass OpretLaaner(int laanerNummer, string navn, string mail)
         {
-            LaanerClass laaner = new LaanerClass(laanerNummer, navn);
+            LaanerClass laaner = new LaanerClass(laanerNummer, navn, mail);
             Laanere.Add(laaner);
-            Console.WriteLine($"Der er nu oprettet en låner med lånernummer {laanerNummer} ved navn {navn}.");
+            Console.WriteLine($"Der er nu oprettet en låner med lånernummer {laanerNummer} ved navn {navn} Kontakt på {mail}.");
             return laaner;
         }
 
         public string HentLaaner(LaanerClass laaner) 
         {
-            return $"Lånernummer: {laaner.LaanerNummer} - Navn: {laaner.Navn} er låner hos: {_biblioteksNavn}.";
+            return $"Lånernummer: {laaner.LaanerNummer} - Navn: {laaner.Navn} er låner hos: {_biblioteksNavn}. Kontakt på mail: {laaner.Mail}.";
         }
 
         public string HentAlleLaanere()

@@ -10,7 +10,7 @@ loop:
         case 'a' or 'A':
             Console.Clear();
             Console.WriteLine(bibliotek.HentBibliotek());
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
             break;
         case 'b' or 'B':
             Console.Clear();
@@ -19,8 +19,11 @@ loop:
             Console.WriteLine("Indtast navn på låner:");
             string navn = Console.ReadLine();
             Console.Clear();
-            bibliotek.OpretLaaner(laanerNummer, navn);
-            Thread.Sleep(1500);
+            Console.WriteLine("Indtast e-mail til låner:");
+            string mail = Console.ReadLine();
+            Console.Clear();
+            bibliotek.OpretLaaner(laanerNummer, navn, mail);
+            Thread.Sleep(2500);
             break;
         case 'c' or 'C':
             Console.Clear();
@@ -41,9 +44,9 @@ loop:
 
 
 
-LaanerClass laaner = new(1, "lucas");
-LaanerClass laaner1 = new(2, "elias");
-LaanerClass laaner2 = new(3, "thomas");
+LaanerClass laaner = new(1, "lucas", "mail@exam.ple");
+LaanerClass laaner1 = new(2, "elias", "mail@exam.ple");
+LaanerClass laaner2 = new(3, "thomas", "mail@exam.ple");
 bibliotek.Laanere.Add(laaner);
 bibliotek.Laanere.Add(laaner1);
 bibliotek.Laanere.Add(laaner2);
