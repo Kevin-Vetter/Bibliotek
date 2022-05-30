@@ -3,6 +3,9 @@
     public class BibliotekClass
     {
         public string _biblioteksNavn = string.Empty;
+        public List<LaanerClass> Laanere;
+
+
         static public int TryParseInt()
         {
             int _value;
@@ -20,6 +23,7 @@
         public BibliotekClass(string biblioteksNavn)
         {
             _biblioteksNavn = biblioteksNavn;
+            Laanere = new();
         }
 
         public string HentBibliotek()
@@ -29,12 +33,25 @@
 
         public LaanerClass OpretLaaner(int laanerNummer, string navn)
         {
-            return new LaanerClass(laanerNummer, navn);
+            LaanerClass laaner = new LaanerClass(laanerNummer, navn);
+            Laanere.Add(laaner);
+            Console.WriteLine($"Der er nu oprettet en låner med lånernummer {laanerNummer} ved navn {navn}.");
+            return laaner;
         }
 
         public string HentLaaner(LaanerClass laaner)
         {
             return $"Lånernummer: {laaner.LaanerNummer} - Navn: {laaner.Navn} er låner hos: {_biblioteksNavn}.";
+        }
+
+        public string HentAlleLaanere()
+        {
+            string navn = string.Empty;
+            foreach (LaanerClass laaner in Laanere)
+            {
+              navn = navn + laaner.Navn + "\n";
+            }
+            return navn;
         }
     }
 }
