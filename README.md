@@ -32,12 +32,13 @@
 * [x] Version 3 - Status: Complete
 * [x] Version 4 - Status: Complete
 * [x] Version 5 - Status: Complete
+* [x] Version 6 - Status: WIP
 
 ## Upcoming
-* Find Låner system
-* Bøger
-* Låner bøger
-* Gemme lånere
+* [ ] Find Låner system
+* [ ] Bøger
+* [ ] Låner bøger
+* [ ] Gemme lånere
 
 ## Known Issues
 * Indeholder en "goto" løkke
