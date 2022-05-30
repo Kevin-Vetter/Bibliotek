@@ -39,7 +39,7 @@
             return laaner;
         }
 
-        public string HentLaaner(LaanerClass laaner)
+        public string HentLaaner(LaanerClass laaner) 
         {
             return $"Lånernummer: {laaner.LaanerNummer} - Navn: {laaner.Navn} er låner hos: {_biblioteksNavn}.";
         }
