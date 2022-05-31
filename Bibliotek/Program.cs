@@ -1,5 +1,13 @@
 ﻿using Bibliotek;
+Console.Title = "Bibliotek af Kevin Vetter";
+
 BibliotekClass bibliotek = new("pops bib");
+LaanerClass laaner = new(1, "lucas", "mail@exam.ple");
+LaanerClass laaner1 = new(2, "elias", "mail@exam.ple");
+LaanerClass laaner2 = new(3, "thomas", "mail@exam.ple");
+bibliotek.Laanere.Add(laaner);
+bibliotek.Laanere.Add(laaner1);
+bibliotek.Laanere.Add(laaner2);
 while (true)
 {
     Console.Clear();
@@ -18,7 +26,6 @@ loop:
             int laanerNummer = BibliotekClass.TryParseInt();
             Console.WriteLine("Indtast navn på låner:");
             string navn = Console.ReadLine();
-            Console.Clear();
             Console.WriteLine("Indtast e-mail til låner:");
             string mail = Console.ReadLine();
             Console.Clear();
@@ -29,9 +36,12 @@ loop:
             Console.Clear();
             for (int i = 0; i < bibliotek.Laanere.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. ");
-                Console.Write(bibliotek.Laanere[i].Navn);
+                LaanerClass currentObject = bibliotek.Laanere[i];
+                Console.Write($"{i + 1}. ");
+                Console.WriteLine($"LånerNummer: {currentObject.LaanerNummer} - Navn: {currentObject.Navn} Mail: {currentObject.Mail}");
             }
+            Console.WriteLine("\n--Tryk på en knap for at vende tilbage til menuen--");
+            Console.ReadKey();
             break;
         case 'd' or 'D':
             Environment.Exit(0);
@@ -43,10 +53,3 @@ loop:
 }
 
 
-
-LaanerClass laaner = new(1, "lucas", "mail@exam.ple");
-LaanerClass laaner1 = new(2, "elias", "mail@exam.ple");
-LaanerClass laaner2 = new(3, "thomas", "mail@exam.ple");
-bibliotek.Laanere.Add(laaner);
-bibliotek.Laanere.Add(laaner1);
-bibliotek.Laanere.Add(laaner2);
