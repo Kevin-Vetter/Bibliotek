@@ -1,17 +1,18 @@
 ## Bibliotek
   - [Bibliotek](#bibliotek)
   - [Author](#author)
-  - [Description](#description)
+  - [Beskrivelse](#beskrivelse)
   - [Features](#features)
   - [Versions](#versions)
   - [Upcoming](#upcoming)
   - [Known Issues](#known-issues)
+  - [Changelog](#changelog)
 
 ## Author
 ### Kevin Vetter
  [Kevin Vetter](https://kevinvetter.dk) er elev hos [LaserTryk.dk](https://lasertryk.dk/personale) i færd med uddannelsen som datatakniker med speciale i programmering
 
-## Description 
+## Beskrivelse 
  Bibliotek er en consoleapp der er udviklet af Kevin Vetter. Appen er udviklet efter en opgave tildelt af Euc Syd og er ment som afsluttende opgave til et forløb om grundlæggende programmering i c# </br>
  Consoleapp
 
@@ -58,4 +59,4 @@
 * [ ] e-mail kan indholde special karaktere Status: TODO
 
 ## Changelog
-* [x] Known Issue: Indeholder en "goto" løkke - Status: DONE - Fixed in : 8847c17
+* [x] Indeholder en "goto" løkke - Status: DONE - Fixed in : 8847c17
