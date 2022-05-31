@@ -1,7 +1,7 @@
 ## Bibliotek
   - [Bibliotek](#bibliotek)
   - [Author](#author)
-  - [Beskrivelse](#beskrivelse)
+  - [Description](#description)
   - [Features](#features)
   - [Versions](#versions)
   - [Upcoming](#upcoming)
