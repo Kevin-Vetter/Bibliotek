@@ -3,6 +3,7 @@
   - [Author](#author)
   - [Beskrivelse](#beskrivelse)
   - [Features](#features)
+  - [Versions](#versions)
   - [Upcoming](#upcoming)
   - [Known Issues](#known-issues)
 
@@ -32,6 +33,8 @@
 <br>
 <br>
 
+
+## Versions
 * [x] Version 1 - Status: Complete
 * [x] Version 2 - Status: Complete
 * [x] Version 3 - Status: Complete
