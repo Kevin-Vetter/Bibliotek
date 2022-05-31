@@ -10,8 +10,12 @@ bibliotek.Laanere.Add(laaner1);
 bibliotek.Laanere.Add(laaner2);
 while (true)
 {
+    Menu();
+}
+
+void Menu()
+{
     Console.Clear();
-loop:
     Console.WriteLine($"------------------\nVælg en af følgende:\nA. Vis bibliotekets navn\nB. Opret låner\nC. Udskriv brugere\nD. Afslut\n------------------\n");
     switch (Console.ReadKey().KeyChar)
     {
@@ -48,8 +52,6 @@ loop:
             break;
         default:
             Console.Clear();
-            goto loop;
+            break;
     }
 }
-
-
