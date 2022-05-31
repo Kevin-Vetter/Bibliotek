@@ -11,7 +11,7 @@
 ### Kevin Vetter
  [Kevin Vetter](https://kevinvetter.dk) er elev hos [LaserTryk.dk](https://lasertryk.dk/personale) i færd med uddannelsen som datatakniker med speciale i programmering
 
-## Beskrivelse 
+## Description 
  Bibliotek er en consoleapp der er udviklet af Kevin Vetter. Appen er udviklet efter en opgave tildelt af Euc Syd og er ment som afsluttende opgave til et forløb om grundlæggende programmering i c#
 
 ## Features
